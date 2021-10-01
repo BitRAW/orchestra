@@ -59,7 +59,7 @@ static_resources:
         - endpoint:
             address:
               socket_address:
-                address: 0.0.0.0
+                address: dingir-matchengine
                 port_value: 50051
 
   - name: rust_http
@@ -78,5 +78,5 @@ static_resources:
         - endpoint:
             address:
               socket_address:
-                address: 0.0.0.0
+                address: dingir-restapi
                 port_value: 50053

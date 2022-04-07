@@ -152,8 +152,8 @@ message OrderPutRequest {
   string quote_limit = 6; // onyl valid for market bid order
   string taker_fee = 7;
   string maker_fee = 8;
-  bool post_only = 9;   // Ensures an Limit order is only subject to Maker Fees
-                         // (ignored for Market orders).
+  bool post_only = 9; // Ensures an Limit order is only subject to Maker Fees
+                      // (ignored for Market orders).
 }
 
 message OrderInfo {
@@ -191,9 +191,7 @@ message OrderCancelRequest {
   string market = 1;
   uint64 order_id = 2;
 }
-message OrderCancelAllRequest {
-  string market = 1;
-}
+message OrderCancelAllRequest { string market = 1; }
 message OrderCancelAllResponse { uint32 total = 1; }
 
 // why not both side
@@ -270,6 +268,8 @@ message MarketSummaryResponse {
     int32 bid_count = 4;
     string bid_amount = 5;
     uint64 trade_count = 6;
+    string volume = 7;
+    string open_interest = 8;
   }
   repeated MarketSummary market_summaries = 1;
 }

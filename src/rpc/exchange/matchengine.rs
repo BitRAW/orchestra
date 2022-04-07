@@ -314,6 +314,10 @@ pub mod market_summary_response {
         pub bid_amount: ::prost::alloc::string::String,
         #[prost(uint64, tag = "6")]
         pub trade_count: u64,
+        #[prost(string, tag = "7")]
+        pub volume: ::prost::alloc::string::String,
+        #[prost(string, tag = "8")]
+        pub open_interest: ::prost::alloc::string::String,
     }
 }
 #[derive(serde::Serialize, serde::Deserialize, Clone, PartialEq, ::prost::Message)]

@@ -462,6 +462,12 @@
         "tradeCount": {
           "type": "string",
           "format": "uint64"
+        },
+        "volume": {
+          "type": "string"
+        },
+        "openInterest": {
+          "type": "string"
         }
       }
     },
